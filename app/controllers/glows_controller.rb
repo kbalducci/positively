@@ -1,0 +1,2 @@
+class GlowsController < ApplicationController
+end
