@@ -4,7 +4,7 @@ class CreateGlows < ActiveRecord::Migration
       t.text :quote
       t.string :author
       t.string :subject
-      t.refernces :user
+      t.references :user
 
       t.timestamps null: false
     end
