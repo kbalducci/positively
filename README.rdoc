@@ -1,27 +1,28 @@
 == README
+About the app - 
+The app Positivity is designed to allow users to post inspirational positive quotes (called glows) and view the glows of others.
+It is intended that users will have a positive experience using the app and that the glows will inspire them to look on 
+the bright side of things each day.
+Need to know:
+* Ruby version - 2.2.0
+* There are seed data, so please run rake db:migrate and then rake db:seed
+* Heroku link: https://kbpositivity.herokuapp.com/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* What's working:
+user sign up
+user sign in
+posting glows
+seeing your own glows
+seeing other people's glows
+navbar and all links
+styled using bootswatch
+seeded data
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Still working on:
+getting heroku to work with paperclip
+sorting data
+paginating
+avatars/pictures using paperclip and aws
 
 
 Please feel free to use a different markup language if you do not plan to run
