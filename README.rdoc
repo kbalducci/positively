@@ -9,20 +9,20 @@ Need to know:
 * Heroku link: https://kbpositivity.herokuapp.com/
 
 * What's working:
-user sign up
-user sign in
-posting glows
-seeing your own glows
-seeing other people's glows
-navbar and all links
-styled using bootswatch
-seeded data
+* user sign up
+* user sign in
+* posting glows
+* seeing your own glows
+* seeing other people's glows
+* navbar and all links
+* styled using bootswatch
+* seeded data
 
 * Still working on:
-getting heroku to work with paperclip
-sorting data
-paginating
-avatars/pictures using paperclip and aws
+* getting heroku to work with paperclip
+* sorting data
+* paginating
+* avatars/pictures using paperclip and aws
 
 
 Please feel free to use a different markup language if you do not plan to run
