@@ -4,12 +4,12 @@
 
     <% if user_signed_in? %>
 
-        <p><a class="btn btn-primary btn-lg" <%= link_to('Logout', destroy_user_session_path(@current_user), :method => :delete) %></a></p>
-        <p><a class="btn btn-primary btn-lg" <%= link_to 'Take me to my Glows', users_path %></a></p>
-        <p><a class="btn btn-primary btn-lg" <%= link_to 'Take me to all Glows', users_path %></a></p>
+        <p><%= link_to('Logout', destroy_user_session_path(@current_user), :method => :delete, class: "btn btn-primary btn-lg" ) %></p>
+        <p><%= link_to('Take me to my Glows', users_path, class: "btn btn-primary btn-lg")%></p>
+        <p><%= link_to('Take me to all Glows', glows_path, class: "btn btn-primary btn-lg") %></p>
       <% else %>
-        <p><a class="btn btn-primary btn-lg" <%= link_to 'Sign Up Now', new_user_registration_path %></a>
-        <p><a class="btn btn-primary btn-lg" <%= link_to 'Sign In Now', new_user_session_path %></a></p>
+        <p><%= link_to('Sign Up Now', new_user_registration_path, class: "btn btn-primary btn-lg")%></p>
+        <p><%= link_to('Sign In Now', new_user_session_path, class: "btn btn-primary btn-lg")%></p>
 
       <% end %>
 

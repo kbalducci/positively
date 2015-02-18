@@ -52,6 +52,7 @@ gem 'aws-sdk', '< 2.0'
 gem 'figaro'
 gem 'devise'
 gem 'faker'
+
 group :test, :development do
 
   gem 'quiet_assets'

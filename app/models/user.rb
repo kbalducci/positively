@@ -1,3 +1,4 @@
+require 'csv'
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
@@ -14,4 +15,12 @@ class User < ActiveRecord::Base
   :default_url => "/images/:style/missing.png"
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
+  def self.to_csv
+    CSV.generate do |csv|
+      csv << User.new.attributes.keys
+      User.all.each do |user|
+        csv << user.attributes.values
+      end
+    end
+  end
 end

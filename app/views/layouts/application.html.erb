@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Positively</title>
+  <title><%= @title || "Positivity | Glow" %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -27,8 +27,11 @@
         <li class="active"><%= link_to 'All Glows', glows_path %><span class="sr-only">(current)</span></a></li>
         <li class="active"><%= link_to 'My Glows', users_path %><span class="sr-only">(current)</span></a></li>
         <li class="active"><%= link_to('Logout', destroy_user_session_path(@current_user), :method => :delete) %><span class="sr-only">(current)</span></a></li>
-        <% end %>
 
+        <% end %>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li class="active"><%= link_to "Reports", reports_path %><span class="sr-only">(current)</span></a></li>
       </ul>
     </div>
   </div>
