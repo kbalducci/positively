@@ -51,8 +51,9 @@ gem 'paperclip', '~> 4.2'
 gem 'aws-sdk', '< 2.0'
 gem 'figaro'
 gem 'devise'
+gem 'faker'
 group :test, :development do
-  gem 'faker'
+
   gem 'quiet_assets'
   gem 'better_errors'
   gem 'binding_of_caller'
