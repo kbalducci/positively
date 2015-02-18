@@ -26,9 +26,9 @@
       <h3> <%= @user.username.capitalize %>'s Glows</h3><br />
       <% @user.glows.each do |glow| %>
         <blockquote>
-          <p><%= glow.subject %></p>
-          <p><%= glow.quote %></p>
+          <p>"<%= glow.quote %>"</p>
           <small><cite title="Source Title">by: <%= glow.author %> </cite></small>
+          <small><%= glow.subject %></small>
         </blockquote>
       <% end %>
     </div>

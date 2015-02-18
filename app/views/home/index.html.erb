@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6">
+      <div class="well well-lg">
+        <h2 style="text-align: center">Look on the bright side!  </h2>
+      </div>
+      <h3> Glows</h3><br />
+      <% @glows.each do |glow| %>
+        <blockquote>
+          <p>"<%= glow.quote %>"</p>
+          <small><cite title="Source Title">by: <%= glow.author %> </cite></small>
+          <small><%= glow.subject %></small>
+        </blockquote>
+      <% end %>
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
+</div>
