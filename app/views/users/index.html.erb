@@ -23,9 +23,11 @@
       <div class="well well-lg">
         <h2 style="text-align: center">Look on the bright side!  </h2>
       </div>
-      <%= image_tag current_user.avatar.url(:medium) %>
-      <h3> <%= @user.username.capitalize %>'s Glows</h3><br />
+
+      <span class="avatar-image"><%= image_tag current_user.avatar.url(:thumb) %></span>
+      <h3 class="avatar-name"> <%= @user.username.capitalize %>'s Glows</h3><br />
       <% @user.glows.each do |glow| %>
+      <div class='block'>
         <blockquote>
           <p>"<%= glow.quote %>"</p>
           <small><cite title="Source Title">by: <%= glow.author %> </cite></small>
