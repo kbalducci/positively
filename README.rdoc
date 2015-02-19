@@ -17,6 +17,7 @@ Need to know:
 * navbar and all links
 * styled using bootswatch
 * seeded data
+* csv reports for users and glows
 
 * Still working on:
 * getting heroku to work with paperclip
