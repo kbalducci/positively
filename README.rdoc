@@ -18,12 +18,12 @@ Need to know:
 * styled using bootswatch
 * seeded data
 * csv reports for users and glows
+* avatars/pictures using paperclip and aws
 
 * Still working on:
-* getting heroku to work with paperclip
 * sorting data
 * paginating
-* avatars/pictures using paperclip and aws
+
 
 
 Please feel free to use a different markup language if you do not plan to run
