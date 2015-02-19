@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
 
   has_attached_file :avatar,
   :styles => { :medium => "300x300>", :thumb => "100x100>" },
+  :bucket => 'kbjsinstaclone',
   :url =>':s3_domain_url',
   :path => ':class/:attachment/:id_partition/:style/:filename',
   :default_url => "/images/:style/missing.png"
