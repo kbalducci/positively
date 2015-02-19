@@ -6,30 +6,18 @@
       <div class="well well-lg">
         <h2 style="text-align: center">Reports</h2>
       </div>
-<ul class="list-group">
-  <li class="list-group-item">
-    <%= link_to "Users Report (as PDF)", all_report_path('pdf') %>
-  </li>
-  <li class="list-group-item">
-    <%= link_to "Users Report (as CSV)", all_report_path('csv') %>
-  </li>
-  <li class="list-group-item">
-    <%= link_to "Users Report (as HTML)", all_report_path() %>
-  </li>
-    <li class="list-group-item">
-    <%= link_to "Glows Report (as PDF)", other_report_path('pdf') %>
-  </li>
-  <li class="list-group-item">
-    <%= link_to "Glows Report (as CSV)", other_report_path('csv') %>
-  </li>
-  <li class="list-group-item">
-    <%= link_to "Glows Report (as HTML)", other_report_path() %>
-  </li>
-</ul>
-</div>
-<div class="col-md-3">
-</div>
-</div>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <%= link_to "Users Report (as CSV)", all_report_path('csv') %>
+        </li>
+        <li class="list-group-item">
+          <%= link_to "Glows Report (as CSV)", other_report_path('csv') %>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
 </div>
 
 
