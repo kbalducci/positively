@@ -12,10 +12,12 @@
           <p>"<%= glow.quote %>"</p>
           <small><cite title="Source Title">by: <%= glow.author %> </cite></small>
           <small><%= glow.subject %></small>
-        </blockquote>
-      <% end %>
-      <%= paginate @glows %>
-      <%= page_entries_info @glows %>
+          <small>Posted by <%= glow.user.username %></small>
+          </blockquote>
+          <% end %>
+        <%= paginate @glows %><br />
+        <%= page_entries_info @glows %>
+      </div>
     </div>
     <div class="col-md-3">
     </div>
