@@ -14,8 +14,11 @@
           <small><%= glow.subject %></small>
         </blockquote>
       <% end %>
+      <%= paginate @glows %>
+      <%= page_entries_info @glows %>
     </div>
     <div class="col-md-3">
     </div>
   </div>
 </div>
+
